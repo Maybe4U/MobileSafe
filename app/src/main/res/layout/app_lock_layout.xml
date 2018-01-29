@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_unlock"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/wallpaper_button_down"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="unlockApp"
+            android:text="未加锁"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_locked"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/wallpaper_button_normal"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="lockedApp"
+            android:text="已加锁"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_unlock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_unlock_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="未加锁软件" />
+
+        <ListView
+            android:id="@+id/lv_unlock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_locked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_locked_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="加锁软件" />
+
+        <ListView
+            android:id="@+id/lv_locked"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>

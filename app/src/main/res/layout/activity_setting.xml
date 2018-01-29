@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:maybe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentScrim="?attr/colorAccent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/fun_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.maybe.android.mobilesafe.view.SwitchView
+                android:id="@+id/slt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                maybe:switch_off="当前自动更新已经关闭"
+                maybe:switch_on="当前自动更新已经开启"
+                maybe:title="设置自动更新">
+            </com.maybe.android.mobilesafe.view.SwitchView>
+            <com.maybe.android.mobilesafe.view.SwitchView
+                android:id="@+id/block_black_num"
+                android:layout_marginTop="-35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                maybe:switch_off="黑名单拦截已经关闭"
+                maybe:switch_on="黑名单拦截已经开启"
+                maybe:title="设置黑名单拦截">
+            </com.maybe.android.mobilesafe.view.SwitchView>
+            <com.maybe.android.mobilesafe.view.SwitchView
+                android:id="@+id/num_add"
+                android:layout_marginTop="-35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                maybe:switch_off="来电归属地显示已经关闭"
+                maybe:switch_on="来电归属地显示已经开启"
+                maybe:title="设置来电归属地显示">
+            </com.maybe.android.mobilesafe.view.SwitchView>
+            <com.maybe.android.mobilesafe.view.ClickView
+                android:id="@+id/num_add_tips"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                maybe:title="来电归属地提示框风格">
+            </com.maybe.android.mobilesafe.view.ClickView>
+            <com.maybe.android.mobilesafe.view.ClickView
+                android:id="@+id/add_tips_loc"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                maybe:title="归属地提示框位置">
+            </com.maybe.android.mobilesafe.view.ClickView>
+            <com.maybe.android.mobilesafe.view.SwitchView
+                android:id="@+id/sw_app_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-35dp"
+                maybe:switch_off="应用锁已经关闭"
+                maybe:switch_on="应用锁已经开启"
+                maybe:title="设置应用锁">
+            </com.maybe.android.mobilesafe.view.SwitchView>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

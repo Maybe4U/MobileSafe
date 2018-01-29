@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#AA39b3a9</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGrey">#cecece</color>
+    <color name="colorAppTheme">#39b3a9</color>
+    <color name="colorFunTheme">#8839b3a9</color>
+    <color name="accent_material_dark_1">#9939b3a9</color>
+    <color name="fun_material_dark_1">#9939b3a9</color>
+</resources>

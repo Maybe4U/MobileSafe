@@ -1,0 +1,10 @@
+手机安全卫士
+
+-----------显示页面    	com.maybe.mobilesafe.activity
+-----------自定义UI    	com.maybe.mobilesafe.view
+-----------复杂业务    	com.maybe.mobilesafe.engine
+-----------持久化      	com.maybe.mobilesafe.db
+                      	com.maybe.mobilesafe.db.dao
+-----------广播接收者    com.maybe.mobilesafe.receiver
+-----------后台服务	com.maybe.mobilesafe.service
+-----------公共AIP    com.maybe.mobilesafe.utils
